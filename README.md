@@ -1,6 +1,6 @@
-# Low-cost-3D-HYDROPHONE-SCANNING-TANK-WITH-LABVIEW-and-ARDUINO
+# Low-cost-2D-HYDROPHONE-SCANNING-TANK-WITH-LABVIEW-and-ARDUINO
 
-# Sistema de Varredura Tridimensional para Mapeamento Acústico
+# Sistema de Varredura 2D para Mapeamento Acústico
 
 Este repositório contém o código-fonte e a documentação do sistema automatizado de baixo custo para o posicionamento preciso de um hidrofone em tanques acústicos.
 
