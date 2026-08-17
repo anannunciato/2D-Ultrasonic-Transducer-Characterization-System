@@ -1,4 +1,4 @@
-# Low-cost-3D-HYDROPHONE-SCANNING-TANK-WITH-LABVIEW-and-ARDUINO aaa
+# Low-cost-3D-HYDROPHONE-SCANNING-TANK-WITH-LABVIEW-and-ARDUINO
 
 # Sistema de Varredura Tridimensional para Mapeamento Acústico
 
