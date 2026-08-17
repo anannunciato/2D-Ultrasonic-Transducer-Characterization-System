@@ -10,16 +10,27 @@ Este repositório contém o código-fonte e a documentação do sistema automati
 * Motores de Passo NEMA 17
 * LCD Keypad Shield (IHM Física Modificada)
 
-## 💻 Software e Arquiteturas
-* **Firmware (Arduino):** Desenvolvido utilizando as bibliotecas `AccelStepper` e `LiquidCrystal` de forma não-bloqueante.
-* **Interface (LabVIEW):** Desenvolvido no LabVIEW Community 2026 Q1 utilizando arquitetura de Máquina de Estados Finitos (MEF).
+## Estrutura do Repositório
 
-## 🚀 Como Executar o Projeto
+```text
+.
+├── documentacao/
+│   ├── artigo.pdf                 # Artigo do projeto
+│   ├── lista_de_materiais.pdf     # Relação detalhada de componentes de hardware
+│
+├── firmware-arduino/
+│   └── firmware_arduino/          # Código-fonte principal em C/C++ (Arduino IDE)
+│       └── firmware_arduino.ino   # Firmware de controle dos eixos X/Z e sincronismo (100 Hz)
+│
+├── software-labview/
+│   ├── bibliotecas/               # Dependências e drivers VISA do LabVIEW
+│   └── Varredura_2D.vi            # Interface principal de automação de malha em zigue-zague
+│
+└── README.md                      # Documentação geral do projeto
+
+##  Como Executar o Projeto
 1. Carregue o arquivo contido na pasta `/firmware-arduino` no Arduino Mega.
 2. Faça o ajuste manual dos limites espaciais no LCD Shield.
 3. Abra o software no LabVIEW, configure a porta COM correta e inicie a varredura automática.
 
-## 📄 Documentação Completa
-O artigo científico contendo o manual detalhado de instalação, remapeamento de pinos e calibração do sistema pode ser baixado diretamente na pasta de documentação ou pelo link abaixo:
 
-* [Clique aqui para acessar o Manual de Instalação (PDF)](documentacao/artigo_manual.pdf)
