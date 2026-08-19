@@ -33,13 +33,12 @@
 - **Amauri Amorin Assef** (CPGEI-CT / DAELT - UTFPR)
 
 <a id="visão-geral-pt"></a>
-### 📋 Visão Geral
+### Visão Geral
 Este repositório contém o código-fonte, esquemáticos e documentação do desenvolvimento e validação experimental de uma plataforma de baixo custo para caracterização de transdutores ultrassônicos. O sistema integra um sistema de posicionamento mecânico bidimensional (eixos X-Z) baseado em microcontrolador, uma interface supervisória no LabVIEW e rotinas de processamento de sinais em MATLAB para mapeamento de pressão acústica e análise espectral.
 
 <a id="arquitetura-do-sistema-pt"></a>
 ### Arquitetura do Sistema
 ![Arquitetura do Sistema](arranjo.png)  
-*(Substitua `documentacao/imagem_do_sistema.png` pelo caminho real da imagem do seu sistema)*
 
 O sistema opera de forma integrada: o LabVIEW (via comunicação serial e USB) envia comandos ao Arduino Mega 2560 para coordenar os motores de passo dos eixos X e Z na malha de varredura zigue-zague. Simultaneamente, o Arduino gera sinais de sincronismo (100 Hz) para o gerador de pulsos (Pulser/Receiver), enquanto a aquisição das formas de onda do hidrofone é feita pelo osciloscópio conectado via Ethernet ao LabVIEW.
 
