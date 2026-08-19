@@ -7,6 +7,10 @@
 
 const int pinoTrigger = 50; 
 
+// --- PINS DOS FINS DE CURSO ---
+const int pinoFimDeCursoX = 48; // Fim de curso do Eixo X
+const int pinoFimDeCursoZ = 49; // Fim de curso do Eixo Z
+
 // RS:22, E:23, D4:24, D5:25, D6:26, D7:27
 LiquidCrystal lcd(22, 23, 24, 25, 26, 27);
 const int pinoBotoes = A8; 
@@ -28,7 +32,7 @@ const int intervaloDebounce = 200;
 
 unsigned long ultimoPulsoMovimento = 0;
 
-// ---> ALTERADO: Configurado para 10ms (Equivale a uma frequência de 100 Hz)
+// Configurado para 10ms (Equivale a uma frequência de 100 Hz)
 const int intervaloPulsoMovimento = 10; 
 
 String comandoAcumulado = "";
@@ -158,6 +162,18 @@ void processarBotao(int b) {
   }
 }
 
+void verificarFinsDeCurso() {
+  if (digitalRead(pinoFimDeCursoX) == LOW) {
+    stepperX.stop(); 
+    stepperX.setCurrentPosition(stepperX.currentPosition()); 
+  }
+
+  if (digitalRead(pinoFimDeCursoZ) == LOW) {
+    stepperZ.stop(); 
+    stepperZ.setCurrentPosition(stepperZ.currentPosition()); 
+  }
+}
+
 void setup() {
   Serial.begin(9600);
   
@@ -167,7 +183,11 @@ void setup() {
   pinMode(enPin, OUTPUT);
   digitalWrite(enPin, LOW); 
 
-  stepperX.setMaxSpeed(600.0);      
+  
+  pinMode(pinoFimDeCursoX, INPUT_PULLUP);
+  pinMode(pinoFimDeCursoZ, INPUT_PULLUP);
+
+  stepperX.setMaxSpeed(600.0);       
   stepperX.setAcceleration(400.0);  
   stepperZ.setMaxSpeed(600.0);     
   stepperZ.setAcceleration(400.0); 
@@ -179,7 +199,6 @@ void setup() {
   atualizarPainel(); 
 }
 
-//Recebimento do labview 
 void loop() {
   while (Serial.available() > 0) {
     char c = Serial.read();
@@ -193,7 +212,6 @@ void loop() {
     }
   }
 
-  // lógica de funcionamento do teclado
   if (!modoRemoto) {
     if (millis() - ultimaLeituraBotao > intervaloDebounce) {
       int leitura = analogRead(pinoBotoes);
@@ -207,11 +225,11 @@ void loop() {
     }
   }
 
-  //Movimentação constante dos motores 
+  verificarFinsDeCurso();
+
   stepperX.run();
   stepperZ.run();
 
-  // Pulso contínuo no modo manual a 100Hz (intervalo de 10ms)
   if (!modoRemoto && sistemaIniciouPulsos) {
     if (millis() - ultimoPulsoMovimento >= intervaloPulsoMovimento) {
       dispararPulso();
