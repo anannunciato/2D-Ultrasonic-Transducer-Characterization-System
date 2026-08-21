@@ -15,7 +15,7 @@
 ---
 
 <a name="português"></a>
-##Português
+## Português
 
 ### Resumo do Projeto
 Sistema de varredura bidimensional (2D) de baixo custo para o mapeamento e caracterização espacial de campos de pressão emitidos por transdutores de ultrassom. A plataforma combina movimentação mecânica de precisão micrométrica com controle híbrido (manual via teclado LCD e autônomo via software em LabVIEW), integrado ao sincronismo de disparo de pulsadores e aquisição via osciloscópio.
