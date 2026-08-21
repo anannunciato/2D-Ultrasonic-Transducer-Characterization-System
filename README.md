@@ -1,5 +1,5 @@
 <p align="center">
-  <b>Language / Idioma:</b> 🇺🇸 <a href="#english">English</a> · 🇧🇷 <a href="#português">Português</a>
+  <b>Language / Idioma:</b> <a href="#english">English</a> · <a href="#português">Português</a>
 </p>
 
 ---
@@ -8,38 +8,62 @@
 
 > **Artigo / Article** — Desenvolvimento de Ferramentas para Sistema de Caracterização de Transdutores de Ultrassom
 > 
-> **Autores / Authors:** Ana Clara Annunciato de Oliveira · Ana Laura Waideman de Oliveira · Joaquim Miguel Maia · Amauri Amorin Assef
+> **Autores / Authors:** Ana Laura Waideman de Oliveira · Ana Clara Annunciato de Oliveira · Alexia Marcon Watzlawick · Gilson Maekawa Kanashiro · Joaquim Miguel Maia · Amauri Amorin Assef
+>
+> **Instituição / Institution:** Universidade Tecnológica Federal do Paraná (UTFPR) — Campus Curitiba
 
 ---
-<a id="arquitetura-do-sistema-pt"></a>
+
+<a name="português"></a>
+##Português
+
+### Resumo do Projeto
+Sistema de varredura bidimensional (2D) de baixo custo para o mapeamento e caracterização espacial de campos de pressão emitidos por transdutores de ultrassom. A plataforma combina movimentação mecânica de precisão micrométrica com controle híbrido (manual via teclado LCD e autônomo via software em LabVIEW), integrado ao sincronismo de disparo de pulsadores e aquisição via osciloscópio.
+
 ### Arquitetura do Sistema
-![Arquitetura do Sistema](arranjo.png)  
+O diagrama abaixo ilustra a integração entre a estrutura de movimentação mecânica, a eletrônica de controle e o software de automação:
 
-O sistema opera de forma integrada: o LabVIEW (via comunicação serial e USB) envia comandos ao Arduino Mega 2560 para coordenar os motores de passo dos eixos X e Z na malha de varredura zigue-zague. Simultaneamente, o Arduino gera sinais de sincronismo (100 Hz) para o gerador de pulsos (Pulser/Receiver), enquanto a aquisição das formas de onda do hidrofone é feita pelo osciloscópio conectado via Ethernet ao LabVIEW.
+<p align="center">
+  <img src="documentacao/systemDiagram.png" alt="Diagrama do Sistema" width="700"/>
+</p>
 
-<a id="hardware-utilizado-pt"></a>
-### Hardware Utilizado
-* **Arduino Mega 2560** (Placa de controle e gerador de sincronismo)
-* **CNC Shield V3 + Drivers DRV8825** (Configurados em micropasso de 1/32)
-* **2x Motores de Passo NEMA 17** ($1.8^\circ$/passo, fuso TR8x2)
-* **LCD Keypad Shield 16x2** (Interface Homem-Máquina local modificada)
-* **Chaves Fim de Curso** (Segurança mecânica e limite dos eixos)
+### Especificações Técnicas & Hardware
+* **Microcontrolador:** Arduino Mega 2560
+* **Escudo de Controle:** CNC Shield V3
+* **Drivers de Passo:** DRV8825 configurados em micropasso de 1/32 (resolução de 0,056° por micropasso)
+* **Atuadores:** 2x Motores NEMA 17 com eixos lineares e fusos roscados TR8×2
+* **Alimentação:** Fonte chaveada dedicada de 12 V / 20 A (motores) com isolamento da lógica (5 V)
+* **Instrumentação Externa:** Pulser/Receiver Olympus 5077PR e Osciloscópio Tektronix MDO3014
 
-<a id="estrutura-do-repositório-pt"></a>
-### Estrutura do Repositório
+### Softwares e Firmwares
+* **LabVIEW (2026 Q1):** Interface gráfica de controle autônomo e envio da matriz de coordenadas via USB.
+* **Arduino IDE (v2.3.8):** Firmware em C/C++ baseado nas bibliotecas `AccelStepper` e `LiquidCrystal`.
 
-```text
-.
-├── documentacao/
-│   ├── artigo.pdf                 # Artigo completo do projeto
-│   └── lista_de_materiais.pdf    # Relação detalhada de componentes de hardware
-│
-├── firmware-arduino/
-│   └── firmware_arduino/         # Código-fonte principal em C/C++ (Arduino IDE)
-│       └── firmware_arduino.ino  # Firmware de controle dos eixos X/Z e sincronismo (100 Hz)
-│
-├── software-labview/
-│   ├── bibliotecas/               # Dependências e drivers VISA do LabVIEW
-│   └── Varredura_2D.vi            # Interface principal de automação de malha em zigue-zague
-│
-└── README.md                      # Documentação geral do projeto
+---
+
+<a name="english"></a>
+## English
+
+### Project Overview
+A low-cost two-dimensional (2D) scanning system designed for spatial mapping and pressure field characterization of ultrasonic transducers. The platform combines micrometric mechanical positioning with hybrid control (manual adjustment via LCD keypad and autonomous execution via LabVIEW), integrated with sync pulse generation for pulser excitation and oscilloscope acquisition.
+
+### System Architecture
+The diagram below illustrates the integration between mechanical positioning, control electronics, and automation software:
+
+<p align="center">
+  <img src="documentacao/systemDiagram.png" alt="System Diagram" width="700"/>
+</p>
+
+### Technical Specifications & Hardware
+* **Microcontroller:** Arduino Mega 2560
+* **Control Shield:** CNC Shield V3
+* **Stepper Drivers:** DRV8825 with 1/32 microstepping configuration (0.056° microstep resolution)
+* **Actuators:** 2x NEMA 17 Stepper Motors with linear shafts and TR8×2 lead screws
+* **Power Supply:** Dedicated 12 V / 20 A switching power supply isolated from 5 V logic
+* **External Instrumentation:** Olympus 5077PR Pulser/Receiver and Tektronix MDO3014 Oscilloscope
+
+### Software & Firmware
+* **LabVIEW (2026 Q1):** Graphical user interface for autonomous control and serial USB transmission of coordinates.
+* **Arduino IDE (v2.3.8):** C/C++ firmware built with `AccelStepper` and `LiquidCrystal`.
+
+---
