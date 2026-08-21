@@ -1,41 +1,16 @@
-# Desenvolvimento de uma Plataforma de Baixo Custo para Varredura 2D e Caracterização de Campos Acústicos Ultrassônicos
-
 <p align="center">
-  <a href="#lang-pt">🇧🇷 Português</a> •
-  <a href="#lang-en">🇺🇸 English</a>
+  <b>Language / Idioma:</b> 🇺🇸 <a href="#english">English</a> · 🇧🇷 <a href="#português">Português</a>
 </p>
 
 ---
 
-<a id="lang-pt"></a>
-# 🇧🇷 Português
+# 2D Ultrasonic Transducer Characterization System
 
-## Sumário
-- [Título do Projeto](#-desenvolvimento-de-uma-plataforma-de-baixo-custo-para-varredura-2d-e-caracterização-de-campos-acústicos-ultrassônicos)
-- [Autores](#-autores-pt)
-- [Visão Geral](#-visão-geral-pt)
-- [Arquitetura do Sistema](#-arquitetura-do-sistema-pt)
-- [Hardware Utilizado](#-hardware-utilizado-pt)
-- [Estrutura do Repositório](#-estrutura-do-repositório-pt)
-- [Artigo do Projeto](#-artigo-do-projeto-pt)
+> **Artigo / Article** — Desenvolvimento de Ferramentas para Sistema de Caracterização de Transdutores de Ultrassom
+> 
+> **Autores / Authors:** Ana Clara Annunciato de Oliveira · Ana Laura Waideman de Oliveira · Joaquim Miguel Maia · Amauri Amorin Assef
 
 ---
-
-## Desenvolvimento de uma Plataforma de Baixo Custo para Varredura 2D e Caracterização de Campos Acústicos Ultrassônicos
-
-<a id="autores-pt"></a>
-### Autores
-- **Ana Laura Waideman de Oliveira** (DAELT - UTFPR)
-- **Ana Clara Annunciato de Oliveira** (DAELT - UTFPR)
-- **Alexia Marcon Watzlawick** (CPGEI-CT - UTFPR)
-- **Gilson Maekawa Kanashiro** (CPGEI-CT - UTFPR / IFPR)
-- **Joaquim Miguel Maia** (CPGEI-CT / DAELN - UTFPR)
-- **Amauri Amorin Assef** (CPGEI-CT / DAELT - UTFPR)
-
-<a id="visão-geral-pt"></a>
-### Visão Geral
-Este repositório contém o código-fonte, esquemáticos e documentação do desenvolvimento e validação experimental de uma plataforma de baixo custo para caracterização de transdutores ultrassônicos. O sistema integra um sistema de posicionamento mecânico bidimensional (eixos X-Z) baseado em microcontrolador, uma interface supervisória no LabVIEW e rotinas de processamento de sinais em MATLAB para mapeamento de pressão acústica e análise espectral.
-
 <a id="arquitetura-do-sistema-pt"></a>
 ### Arquitetura do Sistema
 ![Arquitetura do Sistema](arranjo.png)  
