@@ -39,18 +39,6 @@ O diagrama abaixo ilustra a integração entre a estrutura de movimentação mec
 * **LabVIEW (2026 Q1):** Interface gráfica de controle autônomo e envio da matriz de coordenadas via USB.
 * **Arduino IDE (v2.3.8):** Firmware em C/C++ baseado nas bibliotecas `AccelStepper` e `LiquidCrystal`.
   
-* ## Estrutura de Diretórios
-
-```text
-.
-├── documentacao/
-│   └── systemDiagram.png
-├── firmware-arduino/
-│   └── firmware_arduino.ino
-├── software-labview/
-│   ├── instrucoes.txt
-│   └── varredura_acustica.vi
-└── README.md
 
 ---
 
@@ -78,18 +66,5 @@ The diagram below illustrates the integration between mechanical positioning, co
 ### Software & Firmware
 * **LabVIEW (2026 Q1):** Graphical user interface for autonomous control and serial USB transmission of coordinates.
 * **Arduino IDE (v2.3.8):** C/C++ firmware built with `AccelStepper` and `LiquidCrystal`.
-
-## Directory Structure
-
-```text
-.
-├── documentacao/
-│   └── systemDiagram.png
-├── firmware-arduino/
-│   └── firmware_arduino.ino
-├── software-labview/
-│   ├── instrucoes.txt
-│   └── varredura_acustica.vi
-└── README.md
 
 ---
