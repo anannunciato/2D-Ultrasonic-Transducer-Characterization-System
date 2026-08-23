@@ -52,7 +52,7 @@ O diagrama abaixo ilustra a integração entre a estrutura de movimentação mec
 │   └── sistema_varredura (2).vi
 └── README.md
 
----
+```
 
 <a name="english"></a>
 ## English
