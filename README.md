@@ -69,6 +69,7 @@ The diagram below illustrates the integration between mechanical positioning, co
 
 ### Repository Structure
 
+```text
 2D-Ultrasonic-Transducer-Characterization-System/
 ├── documentacao/
 │   ├── projectOverview.png
@@ -78,5 +79,4 @@ The diagram below illustrates the integration between mechanical positioning, co
 ├── software-labview/
 │   └── sistema_varredura (2).vi
 └── README.md
-
 ---
