@@ -24,7 +24,7 @@ Sistema de varredura bidimensional (2D) de baixo custo para o mapeamento e carac
 O diagrama abaixo ilustra a integração entre a estrutura de movimentação mecânica, a eletrônica de controle e o software de automação:
 
 <p align="center">
-  <img src="documentacao/systemDiagram.png" alt="Diagrama do Sistema" width="700"/>
+  <img src="documentacao/projectOverview.png" alt="Diagrama do Sistema" width="700"/>
 </p>
 
 ### Especificações Técnicas & Hardware
@@ -52,7 +52,7 @@ A low-cost two-dimensional (2D) scanning system designed for spatial mapping and
 The diagram below illustrates the integration between mechanical positioning, control electronics, and automation software:
 
 <p align="center">
-  <img src="documentacao/systemDiagram.png" alt="System Diagram" width="700"/>
+  <img src="documentacao/projectOverview.png" alt="System Diagram" width="700"/>
 </p>
 
 ### Technical Specifications & Hardware
