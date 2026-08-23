@@ -38,7 +38,19 @@ O diagrama abaixo ilustra a integração entre a estrutura de movimentação mec
 ### Softwares e Firmwares
 * **LabVIEW (2026 Q1):** Interface gráfica de controle autônomo e envio da matriz de coordenadas via USB.
 * **Arduino IDE (v2.3.8):** Firmware em C/C++ baseado nas bibliotecas `AccelStepper` e `LiquidCrystal`.
-  
+
+### Estrutura do Repositório
+
+```text
+2D-Ultrasonic-Transducer-Characterization-System/
+├── documentacao/
+│   ├── projectOverview.png
+│   └── lista_de_materiais.xlsx
+├── firmware-arduino/
+│   └── firmware_arduino.ino
+├── software-labview/
+│   └── sistema_varredura (2).vi
+└── README.md
 
 ---
 
