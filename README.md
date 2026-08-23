@@ -67,4 +67,16 @@ The diagram below illustrates the integration between mechanical positioning, co
 * **LabVIEW (2026 Q1):** Graphical user interface for autonomous control and serial USB transmission of coordinates.
 * **Arduino IDE (v2.3.8):** C/C++ firmware built with `AccelStepper` and `LiquidCrystal`.
 
+### Repository Structure
+
+2D-Ultrasonic-Transducer-Characterization-System/
+├── documentacao/
+│   ├── projectOverview.png
+│   └── lista_de_materiais.xlsx
+├── firmware-arduino/
+│   └── firmware_arduino.ino
+├── software-labview/
+│   └── sistema_varredura (2).vi
+└── README.md
+
 ---
