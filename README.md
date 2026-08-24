@@ -52,7 +52,7 @@ Para consultar a especificação completa de componentes e a planilha de custos 
 ├── firmware-arduino/
 │   └── firmware_arduino.ino
 ├── software-labview/
-│   └── sistema_varredura (2).vi
+│   └── sistema_labview.vi
 └── README.md
 
 ```
@@ -95,6 +95,6 @@ To view the full component specifications, and cost breakdown, access the [Docum
 ├── firmware-arduino/
 │   └── firmware_arduino.ino
 ├── software-labview/
-│   └── sistema_varredura (2).vi
+│   └── sistema_labview.vi
 └── README.md
 ---
