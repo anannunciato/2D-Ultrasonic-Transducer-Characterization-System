@@ -36,7 +36,7 @@ O diagrama abaixo ilustra a integração entre a estrutura de movimentação mec
 * **Instrumentação Externa:** Pulser/Receiver Olympus 5077PR e Osciloscópio Tektronix MDO3014
   
 ### Lista de Materiais e Equipamentos
-Para consultar a especificação completa de componentes, quantidades e custos do projeto, acesse a [Lista de Materiais e Orçamento (XLSX)](documentacao/lista_de_materiais.xlsx).
+Para consultar a especificação completa de componentes e a planilha de custos do projeto, acesse a [Pasta de Documentação](documentacao/).
 
 * ### Softwares e Firmwares
 * **[LabVIEW (2026 Q1)](https://www.ni.com/pt-br/support/downloads/software-products/download.labview.html):** Interface gráfica de controle autônomo e envio da matriz de coordenadas via USB.
@@ -81,6 +81,9 @@ The diagram below illustrates the integration between mechanical positioning, co
 ### Software & Firmware
 * **[LabVIEW (2026 Q1)](https://www.ni.com/pt-br/support/downloads/software-products/download.labview.html):** Graphical user interface for autonomous control and serial USB transmission of coordinates.
 * **[Arduino IDE (v2.3.8)](https://www.arduino.cc/en/software):** C/C++ firmware built with `AccelStepper` and `LiquidCrystal`.
+
+### Bill of Materials & Equipment
+To view the full component specifications, and cost breakdown, access the [Documentation Folder](documentacao/).
 
 ### Repository Structure
 
