@@ -34,6 +34,9 @@ O diagrama abaixo ilustra a integração entre a estrutura de movimentação mec
 * **Atuadores:** 2x Motores NEMA 17 com eixos lineares e fusos roscados TR8×2
 * **Alimentação:** Fonte chaveada dedicada de 12 V / 20 A (motores) com isolamento da lógica (5 V)
 * **Instrumentação Externa:** Pulser/Receiver Olympus 5077PR e Osciloscópio Tektronix MDO3014
+  
+### Lista de Materiais e Equipamentos
+Para consultar a especificação completa de componentes, quantidades e custos do projeto, acesse a [Lista de Materiais e Orçamento (XLSX)](documentacao/lista_de_materiais.xlsx).
 
 * ### Softwares e Firmwares
 * **[LabVIEW (2026 Q1)](https://www.ni.com/pt-br/support/downloads/software-products/download.labview.html):** Interface gráfica de controle autônomo e envio da matriz de coordenadas via USB.
