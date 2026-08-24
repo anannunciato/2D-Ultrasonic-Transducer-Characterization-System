@@ -76,8 +76,8 @@ The diagram below illustrates the integration between mechanical positioning, co
 * **External Instrumentation:** Olympus 5077PR Pulser/Receiver and Tektronix MDO3014 Oscilloscope
 
 ### Software & Firmware
-* **LabVIEW (2026 Q1):** Graphical user interface for autonomous control and serial USB transmission of coordinates.
-* **Arduino IDE (v2.3.8):** C/C++ firmware built with `AccelStepper` and `LiquidCrystal`.
+* **[LabVIEW (2026 Q1)](https://www.ni.com/pt-br/support/downloads/software-products/download.labview.html):** Graphical user interface for autonomous control and serial USB transmission of coordinates.
+* **[Arduino IDE (v2.3.8)](https://www.arduino.cc/en/software):** C/C++ firmware built with `AccelStepper` and `LiquidCrystal`.
 
 ### Repository Structure
 
