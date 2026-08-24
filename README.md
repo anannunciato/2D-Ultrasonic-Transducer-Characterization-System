@@ -35,9 +35,9 @@ O diagrama abaixo ilustra a integração entre a estrutura de movimentação mec
 * **Alimentação:** Fonte chaveada dedicada de 12 V / 20 A (motores) com isolamento da lógica (5 V)
 * **Instrumentação Externa:** Pulser/Receiver Olympus 5077PR e Osciloscópio Tektronix MDO3014
 
-### Softwares e Firmwares
-* **LabVIEW (2026 Q1):** Interface gráfica de controle autônomo e envio da matriz de coordenadas via USB.
-* **Arduino IDE (v2.3.8):** Firmware em C/C++ baseado nas bibliotecas `AccelStepper` e `LiquidCrystal`.
+* ### Softwares e Firmwares
+* **[LabVIEW (2026 Q1)](https://www.ni.com/pt-br/support/downloads/software-products/download.labview.html):** Interface gráfica de controle autônomo e envio da matriz de coordenadas via USB.
+* **[Arduino IDE (v2.3.8)](https://www.arduino.cc/en/software):** Firmware em C/C++ baseado nas bibliotecas `AccelStepper` e `LiquidCrystal`.
 
 ### Estrutura do Repositório
 
