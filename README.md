@@ -6,6 +6,11 @@
 
 # 2D Ultrasonic Transducer Characterization System
 
+[![System Overview Video](https://img.youtube.com/vi/y6sX9zQ8jUQ/maxresdefault.jpg)](https://youtu.be/y6sX9zQ8jUQ)
+
+> **Demonstração do Projeto / Project Presentation**  
+
+
 > **Artigo / Article** — Desenvolvimento de uma Plataforma de Baixo Custo para Varredura 2D e Caracterização de Campos Acústicos Ultrassônicos / Development of a Low-Cost Platform for 2D Scanning and Characterization of Ultrasonic Acoustic Fields 
 > 
 > **Autores / Authors:** Ana Laura Waideman de Oliveira · Ana Clara Annunciato de Oliveira · Alexia Marcon Watzlawick · Gilson Maekawa Kanashiro · Joaquim Miguel Maia · Amauri Amorin Assef
