@@ -6,7 +6,7 @@
 
 # 2D Ultrasonic Transducer Characterization System
 
-[![Demonstração do Projeto / Project Presentation](https://youtu.be/y6sX9zQ8jUQ)
+[Assista ao vídeo de apresentação do projeto no YouTube / Watch the project presentation on YouTube(https://youtu.be/y6sX9zQ8jUQ)
 
 > **Artigo / Article** — Desenvolvimento de uma Plataforma de Baixo Custo para Varredura 2D e Caracterização de Campos Acústicos Ultrassônicos / Development of a Low-Cost Platform for 2D Scanning and Characterization of Ultrasonic Acoustic Fields 
 > 
