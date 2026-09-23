@@ -6,11 +6,12 @@
 
 # 2D Ultrasonic Transducer Characterization System
 
-[Assista ao vídeo de apresentação do projeto no YouTube / Watch the project presentation on YouTube(https://youtu.be/y6sX9zQ8jUQ)
+Assista ao vídeo de apresentação do projeto no YouTube / Watch the project presentation on YouTube(https://youtu.be/Gf41ODzqaRU?si=8bYSbncVEvdL-Mmj)
 
 > **Artigo / Article** — Desenvolvimento de uma Plataforma de Baixo Custo para Varredura 2D e Caracterização de Campos Acústicos Ultrassônicos / Development of a Low-Cost Platform for 2D Scanning and Characterization of Ultrasonic Acoustic Fields 
 > 
 > **Autores / Authors:** Ana Laura Waideman de Oliveira (analauraoliveira@alunos.utfpr.edu.br) · Ana Clara Annunciato de Oliveira (ana.180106@alunos.utfpr.edu.br) · Alexia Marcon Watzlawick (awatzlawick@alunos.utfpr.edu.br) · Gilson Maekawa Kanashiro (gilson.kanashiro@ifpr.edu.br) · Joaquim Miguel Maia (joaquim@utfpr.edu.br) · Amauri Amorin Assef (amauriassef@utfpr.edu.br)
+> 
 > **Instituição / Institution:** Universidade Tecnológica Federal do Paraná (UTFPR) — Campus Curitiba
 
 ---
